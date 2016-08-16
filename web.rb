@@ -25,7 +25,7 @@ post '/charge' do
       :currency => "usd",
       :customer => customer,
       :source => source,
-      :description => params[:description];
+      :description => params[:description]
     )
   rescue Stripe::StripeError => e
     status 402
